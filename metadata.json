@@ -1,0 +1,7 @@
+{
+  "name": "DroidNet Sentinel",
+  "description": "Real-time network interception and connection analysis suite for Android CTF competitions.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

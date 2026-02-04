@@ -1,0 +1,7 @@
+
+{
+  "appId": "com.hackathon.droidnet",
+  "appName": "DroidNet Sentinel",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
