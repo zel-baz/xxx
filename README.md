@@ -1,20 +1,36 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# DroidNet Sentinel - Android CTF Suite
 
-This contains everything you need to run your app locally.
+This project is a real-time network interception and analysis tool designed for Android CTF competitions.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1n7_cSXwJjnupzRFTK7S6lTEjthWUjnrn
+## 🛠 Manual APK Build (Use this if GitHub Actions fails)
 
-## Run Locally
+If your GitHub Actions are blocked due to billing/spending limits, follow these steps to build the APK on your own machine:
 
-**Prerequisites:**  Node.js
+### Prerequisites
+1. **Node.js** (v18+)
+2. **Android Studio**
+3. **Java JDK 17**
 
+### Build Commands
+```bash
+# 1. Install dependencies
+npm install
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+# 2. Build the web files
+npm run build
+
+# 3. Add and Sync the Android project
+npx cap add android
+npx cap sync android
+
+# 4. Open in Android Studio
+npx cap open android
+```
+
+Once Android Studio opens, click the **"Play"** button (Run) or go to **Build > Build Bundle(s) / APK(s) > Build APK(s)** to generate your file.
+
+## 🚀 Features
+- **Kernel Bridge**: Simulated real-time packet interception.
+- **AI Audit**: Security analysis powered by Gemini 3 Pro.
+- **Sentinel Engine**: Advanced connection tracking and telemetry.

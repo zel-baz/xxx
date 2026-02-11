@@ -5,7 +5,7 @@
   "description": "Android CTF Network Monitor",
   "main": "index.html",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/ && cp -r * dist/ || true"
+    "build": "rm -rf dist && mkdir dist && cp index.html index.tsx types.ts metadata.json capacitor.config.json dist/ && cp -r utils services dist/"
   },
   "dependencies": {
     "react": "^19.2.4",
